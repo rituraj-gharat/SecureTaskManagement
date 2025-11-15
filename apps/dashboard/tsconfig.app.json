@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "useDefineForClassFields": false,
+    "types": [],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "jest.config.ts",
+    "src/test-setup.ts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "jest.config.cts"
+  ]
+}
